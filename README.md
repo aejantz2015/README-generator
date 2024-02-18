@@ -9,7 +9,7 @@
   3. [License](#license)
   4. [Contributors](#contributors)
   5. [Tests](#tests)
-  6. [Contact Information](#contact)
+  6. [Contact](#contact)
 
   ## Installation
   NodeJS will be required for the user to run this applicaation. The user can follow this link to download: https://nodejs.org/en/download. Once downloaded, the user will open the integrated terminal and run 'npm init' then run 'npm install inquirer@8.2.4' in the command line.
@@ -46,6 +46,7 @@ SOFTWARE.
   ## Tests
   N/A
 
-  ## Contact Information
-  GitHub: aejantz2015
+  ## Contact
+  GitHub: https://github.com/aejantz2015
+
   Email: aejantz2015@gmail.com

@@ -21,7 +21,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
     {
         name: 'contact',
         type: 'input',
-        message: 'Please enter your GitHub username and your email address.'
+        message: 'Please enter a link to your GitHub profile and your email address.'
     }, 
     {
         name: 'installation',
