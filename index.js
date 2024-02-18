@@ -6,7 +6,8 @@ const generateMarkdown = require('./utils/generateMarkdown')
 // array of questions to prompt the user
 
     function init() {
-        inquirer.prompt ([
+        inquirer.
+        prompt ([
     {
         name: 'title',
         type: 'input',
@@ -15,18 +16,13 @@ const generateMarkdown = require('./utils/generateMarkdown')
     {
         name: 'description',
         type: 'input',
-        message: 'Please describe the purpose of your application and how to use it.'
+        message: 'Please describe the purpose of your application.'
     },
     {
-        name: 'GitHub',
+        name: 'contact',
         type: 'input',
-        message: 'Please enter your GitHub username.'
+        message: 'Please enter your GitHub username and your email address.'
     }, 
-    {
-        name: 'email',
-        type: 'input',
-        message: 'Please enter your email address.'
-    },
     {
         name: 'installation',
         type: 'input',
@@ -46,16 +42,16 @@ const generateMarkdown = require('./utils/generateMarkdown')
         name: 'license',
         type: 'list',
         message: 'Please chooose a license type:',
-        choices: ['ISC, MPL 2.0, MIT, No License']
+        choices: ['ISC', 'MPL 2.0', 'MIT', 'No License']
     },
     {
         name: 'test',
         type: 'input',
         message: 'Please descirbe how this application was tested.'
     }
-]);
+])
 
-then((repsonses) => {
+.then((repsonses) => {
     const markdown = generateMarkdown(repsonses);
 
 fs.writeFile('./Output/README.md', markdown, (err) =>
