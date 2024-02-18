@@ -2,8 +2,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
-// TODO: Create an array of questions for user input
-// const questions = [
+
+// array of questions to prompt the user
+
     function init() {
         inquirer.prompt ([
     {
@@ -45,7 +46,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
         name: 'license',
         type: 'list',
         message: 'Please chooose a license type:',
-        choices: ['ISC, GPL v3, MIT, No License']
+        choices: ['ISC, MPL 2.0, MIT, No License']
     },
     {
         name: 'test',
@@ -54,13 +55,13 @@ const generateMarkdown = require('./utils/generateMarkdown')
     }
 ]);
 
-}
+then((repsonses) => {
+    const markdown = generateMarkdown(repsonses);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+fs.writeFile('./Output/README.md', markdown, (err) =>
+ err ? console.log(err) : console.log ('Successfully created the README file'))
+})
+};
 
 // Function call to initialize app
 init();
