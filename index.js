@@ -19,11 +19,6 @@ const generateMarkdown = require('./utils/generateMarkdown')
         message: 'Please describe the purpose of your application.'
     },
     {
-        name: 'contact',
-        type: 'input',
-        message: 'Please enter a link to your GitHub profile and your email address.'
-    }, 
-    {
         name: 'installation',
         type: 'input',
         message: 'What will be required for users to install and use the application locally?'
@@ -48,7 +43,17 @@ const generateMarkdown = require('./utils/generateMarkdown')
         name: 'test',
         type: 'input',
         message: 'Please descirbe how this application was tested.'
-    }
+    },
+    {
+        name: 'contact1',
+        type: 'input',
+        message: 'Please enter a link to your GitHub profile.'
+    }, 
+    {
+        name: 'contact2',
+        type: 'input',
+        message: 'Pleaes enter your email address.'
+    },
 ])
 
 .then((repsonses) => {

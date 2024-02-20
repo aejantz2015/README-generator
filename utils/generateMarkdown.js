@@ -22,7 +22,7 @@ function generateMarkdown(data) {
   3. [License](#license)
   4. [Contributors](#contributors)
   5. [Tests](#tests)
-  6. [Contact](#contact)
+  6. [Contact](#contact1, #contact2)
 
   ## Installation
   ${data.installation}
@@ -40,7 +40,8 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Contact
-  ${data.contact}
+  ${data.contact1}
+  ${data.contact2}
 `;
 }
 
