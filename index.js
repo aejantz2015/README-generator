@@ -45,15 +45,10 @@ const generateMarkdown = require('./utils/generateMarkdown')
         message: 'Please descirbe how this application was tested.'
     },
     {
-        name: 'contact1',
+        name: 'contact',
         type: 'input',
-        message: 'Please enter a link to your GitHub profile.'
+        message: 'Please enter a link to your GitHub profile and your email address.'
     }, 
-    {
-        name: 'contact2',
-        type: 'input',
-        message: 'Pleaes enter your email address.'
-    },
 ])
 
 .then((repsonses) => {
