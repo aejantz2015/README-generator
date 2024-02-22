@@ -19,7 +19,7 @@
 
   ![Screenshot](./assets/Screenshot.png)
   ![Screenshot](./assets/Screenshot1.png)
-  ![Screenshot](./assets/Screensho2.png)
+  ![Screenshot](./assets/Screenshot2.png)
   ![Screenshot](./assets/Screenshot3.png)
 
   ## License
