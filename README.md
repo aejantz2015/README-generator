@@ -17,6 +17,11 @@
   ## Usage
   This application will be used by software developers to easily and quickly generate a README file for their projects but following simple prompts.
 
+  ![Screenshot](./assets/Screenshot.png)
+  ![Screenshot](./assets/Screenshot1.png)
+  ![Screenshot](./assets/Screensho2.png)
+  ![Screenshot](./assets/Screenshot3.png)
+
   ## License
   MIT License
 
